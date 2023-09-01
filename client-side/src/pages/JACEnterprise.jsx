@@ -1,8 +1,13 @@
 const JACEnterprise = () => {
-    return (
-        <h1>Welcome to JAC Enterprise!</h1>
-    )
-}
+  return (
+    <a
+      href="https://github.com/cljenkinsjr/jackr-enterprises-site"
+      target="_blank"
+      rel="noreferrer"
+    >
+      Go To JAC Enterprises
+    </a>
+  );
+};
 
 export default JACEnterprise;
-
