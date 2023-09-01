@@ -17,7 +17,6 @@ public class MetropolitanMuseumService {
     private final String apiUrl = "https://collectionapi.metmuseum.org/";
     @Autowired
     private RestTemplate restTemplate;
-    private ObjectMapper objectMapper;
 
     public ResponseEntity<String> searchObjects() {
         String Url = apiUrl + "public/collection/v1/objects";
