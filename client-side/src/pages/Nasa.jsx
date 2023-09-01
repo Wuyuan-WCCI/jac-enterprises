@@ -1,5 +1,5 @@
 import  { useState, useEffect } from 'react';
-import './Nasa.css'
+import './Style.css'
 
 const Nasa = () => {
   const [collection, setCollection] = useState([]);

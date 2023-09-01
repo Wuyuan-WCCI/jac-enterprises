@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import './Style.css'
 
 const MetropolitanMuseum = () => {
   const [objectDetails, setObjectDetails] = useState([]);
@@ -32,18 +33,19 @@ const MetropolitanMuseum = () => {
   return (
     <div >
       <h1>Museum Object Details</h1>
-      <ul>
+      <ul className='image-list'>
       
         {objectDetails.map((object) => (
             
-          <li key={object.objectID}>
+          <li key={object.objectID} className='image-item'>
+          {object.primaryImage && (
+  <img src={object.primaryImage} alt={object.title+'No image'} className='image'/>
+)}
             <h2>Title: {object.title}</h2>
             <p>Object ID: {object.objectID}</p>
             <p>{object.artistDisplayName}</p>
             <p>Year: {object.objectDate}</p>
-            {object.primaryImage && (
-  <img src={object.primaryImage} alt={object.title} />
-)}
+           
             <a href={object.objectURL} target="_blank" rel="noopener noreferrer">
               View Details
             </a>
