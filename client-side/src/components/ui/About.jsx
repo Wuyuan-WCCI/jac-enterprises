@@ -3,6 +3,7 @@ import Michael from "../Michael";
 import Ray from "../Ray";
 import Tion from "../Tion";
 import Wuyuan from "../Wuyuan";
+// import 
 const About = () => {
   return (
     <>
