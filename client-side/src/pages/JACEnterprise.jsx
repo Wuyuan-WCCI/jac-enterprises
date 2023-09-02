@@ -1,3 +1,5 @@
+import JAC from "../img/JAC.jpeg"
+
 const JACEnterprise = () => {
   return (
     <a
@@ -5,7 +7,7 @@ const JACEnterprise = () => {
       target="_blank"
       rel="noreferrer"
     >
-      Go To JAC Enterprises
+    <img src={JAC} alt="JAC"/>
     </a>
   );
 };

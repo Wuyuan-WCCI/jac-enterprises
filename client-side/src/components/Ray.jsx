@@ -1,4 +1,5 @@
 import Card from "./ui/Card";
+import RayI from "../img/Ray.avif"
 
 const Ray = () => {
   return (
@@ -16,6 +17,7 @@ const Ray = () => {
               becoming a software developer with a knowledge base in Java
               programming language.
             </p>
+            <img src={RayI} alt="Ray" width={250} height={350} />
             <p><b><i>ray@amazon.com</i></b></p>
           </div>
         </div>

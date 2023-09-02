@@ -1,4 +1,5 @@
 import Card from "./ui/Card";
+import BenI from "../img/Ben.jpeg"
 
 const Ben = () => {
   return (
@@ -18,6 +19,7 @@ const Ben = () => {
               comfortable poring over data sets from a desk as they are leading
               a team of workers on a warehouse floor.
             </p>
+            <img src={BenI} alt="Ben" width={350} height={500} />
             <p>
               <b>
                 <i>ben@amazon.com</i>

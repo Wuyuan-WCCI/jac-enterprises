@@ -1,4 +1,5 @@
 import Card from "./ui/Card";
+import MikeV from "../img/MikeV.jpeg"
 
 const Michael = () => {
   return (
@@ -15,6 +16,7 @@ const Michael = () => {
               best of my abilites and hope to be a software engineer within the
               next year.
             </p>
+            <img src={MikeV} alt="Mike V" width={250} height={350} />
             <p>
               <b>
                 <i>michaelvythilengam@hotmail.com</i>

@@ -2,7 +2,11 @@
   background-color: #ec00cd;
   border-radius: 6px;
   /* border-color: black 6px; */
-  width: 65%;
+  width: 75%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   /* color: */
+  text-align: center;
+  margin: auto;
 }
+
+
