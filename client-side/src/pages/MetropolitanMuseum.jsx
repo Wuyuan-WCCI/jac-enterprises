@@ -12,9 +12,8 @@ const MetropolitanMuseum = () => {
       if (!response.ok) {
         throw new Error('Response is not right');
       }
-      const dataText = await response.text(); // Read the raw text
-      console.log('Response text:', dataText); // Log the response text
-      const data = JSON.parse(dataText); // Attempt to parse the JSON
+      const data = await response.json(); 
+  
       setObjectDetails(data);
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -39,13 +38,12 @@ const MetropolitanMuseum = () => {
             
           <li key={object.objectID} className='image-item'>
           {object.primaryImage && (
-  <img src={object.primaryImage} alt={object.title+'No image'} className='image'/>
+  <img src={object.primaryImage} alt={object.title+'No Image'} className='image'/>
 )}
             <h2>Title: {object.title}</h2>
             <p>Object ID: {object.objectID}</p>
             <p>{object.artistDisplayName}</p>
             <p>Year: {object.objectDate}</p>
-           
             <a href={object.objectURL} target="_blank" rel="noopener noreferrer">
               View Details
             </a>

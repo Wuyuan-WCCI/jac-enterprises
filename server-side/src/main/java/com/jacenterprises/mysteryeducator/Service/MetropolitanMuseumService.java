@@ -23,7 +23,7 @@ public class MetropolitanMuseumService {
         return restTemplate.getForEntity(Url, String.class);
     }
 
-    public ResponseEntity<String> searchObjectId(String objectId) {
+    public ResponseEntity<String> searchObjectId(int objectId) {
         String Url = apiUrl + "public/collection/v1/objects/" + objectId;
         return restTemplate.getForEntity(Url, String.class);
     }
@@ -33,7 +33,7 @@ public class MetropolitanMuseumService {
         return restTemplate.getForEntity(Url, String.class);
     }
 
-    public String getObjectDetails(String objectId) {
+    public String getObjectDetails(int objectId) {
         ResponseEntity<String> response = searchObjectId(objectId);
         return response.getBody();
     }

@@ -13,7 +13,6 @@ public class NasaApiService {
     /* "PgIxMhxq2yQK8VoiD9c26gAtFt4hVdWG3p3enpkE"; */
     @Autowired
     private RestTemplate restTemplate;
-    private ObjectMapper objectMapper;
 
     public ResponseEntity<String> searchImages(String query) {
         String Url = apiUrl + "/search?q=" + query;

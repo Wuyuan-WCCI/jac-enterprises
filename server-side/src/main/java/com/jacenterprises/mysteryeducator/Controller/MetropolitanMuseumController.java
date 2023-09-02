@@ -26,7 +26,7 @@ public class MetropolitanMuseumController {
     }
 
     @GetMapping("metromutroseum/search-objectid/{object_id}")
-    public ResponseEntity<String> searchObjectId(@PathVariable String object_id) {
+    public ResponseEntity<String> searchObjectId(@PathVariable int object_id) {
         return metropolitanMuseumService.searchObjectId(object_id);
     }
 
@@ -41,7 +41,7 @@ public class MetropolitanMuseumController {
 
             if (objectIds.contains(randomId)) {
 
-                ResponseEntity<String> objectResponse = searchObjectId(randomId.toString());
+                ResponseEntity<String> objectResponse = searchObjectId(randomId);
                 objectResponses.add(objectResponse.getBody());
                 count++;
 
