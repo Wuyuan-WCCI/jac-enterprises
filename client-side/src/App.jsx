@@ -7,6 +7,8 @@ import Home from "./pages/Home.jsx";
 // import Developers from "./pages/Developers.jsx";
 import JACEnterprise from "./pages/JACEnterprise.jsx";
 import About from "./components/ui/About.jsx";
+import Nasa from "./pages/Nasa.jsx"
+import MetropolitanMuseum from "./pages/MetropolitanMuseum.jsx"
 
 
 function App() {
@@ -17,8 +19,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/devs" element={<About />} />
           <Route path="/jac-enterprise" element={<JACEnterprise />} />
-          {/* <Route path="/" element={<Nasa />} /> */}
-          {/* <Route path="/" element={<MetropolitanMuseum />} /> */}
+          {<Route path="/nasa" element={<Nasa />} />}
+          {<Route path="/metro" element={<MetropolitanMuseum />} />}
         </Routes>
         {/* <Nasa />
         <MetropolitanMuseum /> */}
