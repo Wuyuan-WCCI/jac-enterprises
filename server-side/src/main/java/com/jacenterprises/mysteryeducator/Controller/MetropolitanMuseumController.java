@@ -37,13 +37,21 @@ public class MetropolitanMuseumController {
         int count = 0;
 
         for (Integer objectId : objectIds) {
-            ResponseEntity<String> objectResponse = searchObjectId(objectId.toString());
-            objectResponses.add(objectResponse.getBody());
-            count++;
+            Integer randomId = (int) (Math.random() * 480000 + 1);
 
-            if (count >= 50) {
-                break;
+            if (objectIds.contains(randomId)) {
+
+                ResponseEntity<String> objectResponse = searchObjectId(randomId.toString());
+                objectResponses.add(objectResponse.getBody());
+                count++;
+
+                System.out.println("Count: " + count);
+                if (count >= 50) {
+                    break;
+                }
+
             }
+
         }
 
         String jsonResponse = "[" + String.join(",", objectResponses) + "]";
