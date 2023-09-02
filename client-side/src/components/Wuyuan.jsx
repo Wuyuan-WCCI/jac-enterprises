@@ -1,4 +1,5 @@
 import Card from "./ui/Card";
+import WuyuanI from "../img/Wuyuan.png"
 
 const Wuyuan = () => {
   return (
@@ -16,6 +17,7 @@ const Wuyuan = () => {
               experiences. Lets connect and explore how we can collaborate on
               your next web development venture!
             </p>
+            <img src={WuyuanI} alt="Wuyuan" width={250} height={350} />
             <p><b><i>wuyuan-wcci@gmail.com</i></b></p>
           </div>
         </div>

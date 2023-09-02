@@ -1,4 +1,5 @@
 import Card from "./ui/Card";
+import TionI from "../img/Tion.jpeg"
 
 const Tion = () => {
   return (
@@ -15,7 +16,7 @@ const Tion = () => {
               of the city, before moving to the suburbs nearly a decade ago.
               Fullstack developer with no current specialty.
             </p>
-
+            <img src={TionI} alt="Tion" width={350} height={500} />
             <p>
               <b>
                 <i>tioncarter@gmail.com</i>
